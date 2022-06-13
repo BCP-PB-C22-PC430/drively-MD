@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.drively">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Drively"
+        tools:targetApi="31">
+        <activity
+            android:name=".ActivitySplashScreen"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Drively.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityLandingPage"
+            android:theme="@style/Theme.Drively.NoActionBar" />
+        <activity
+            android:name=".ActivitySignIn"
+            android:theme="@style/Theme.Drively.NoActionBar" />
+        <activity
+            android:name=".ActivitySignUp"
+            android:theme="@style/Theme.Drively.NoActionBar" />
+        <activity
+            android:name=".ActivityMainPage"
+            android:theme="@style/Theme.Drively.NoActionBar" />
+        <activity
+            android:name=".ActivityProfile"
+            android:theme="@style/Theme.Drively.NoActionBar" />
+        <activity
+            android:name=".ActivityAboutApp"
+            android:theme="@style/Theme.Drively.NoActionBar" />
+        <activity
+            android:name=".ActivityDrowsiness"
+            android:theme="@style/Theme.Drively.NoActionBar" />
+        <activity
+            android:name=".ActivitySpeedLimit"
+            android:theme="@style/Theme.Drively.NoActionBar" />
+        <activity
+            android:name=".ActivityDrivePrep"
+            android:theme="@style/Theme.Drively.NoActionBar" />
+        <!--        <activity-->
+        <!--            android:name=".CameraActivity"-->
+        <!--            android:exported="false"-->
+        <!--            android:screenOrientation="landscape" />-->
+        <!--        <activity-->
+        <!--            android:name=".SmartCamera"-->
+        <!--            android:exported="false" />-->
+
+    </application>
+
+</manifest>

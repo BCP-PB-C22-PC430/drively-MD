@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/drively.iml" filepath="$PROJECT_DIR$/.idea/modules/drively.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/drively.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/drively.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/drively.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/drively.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/drively.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/drively.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/drively.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/drively.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/opencv/drively.opencv.iml" filepath="$PROJECT_DIR$/.idea/modules/opencv/drively.opencv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sdk/drively.sdk.iml" filepath="$PROJECT_DIR$/.idea/modules/sdk/drively.sdk.iml" />
+    </modules>
+  </component>
+</project>
