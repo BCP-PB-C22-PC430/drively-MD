@@ -1,5 +1,6 @@
 package com.example.drively;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,6 +11,7 @@ import android.view.animation.AnimationUtils;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
@@ -17,6 +19,7 @@ import androidx.core.widget.NestedScrollView;
 
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class ActivityAboutApp extends AppCompatActivity {
 
@@ -66,8 +69,27 @@ public class ActivityAboutApp extends AppCompatActivity {
             startActivity(new Intent(getApplicationContext(), ActivityAboutApp.class));
 //            Toast.makeText(this, "About App is under develop.", Toast.LENGTH_SHORT).show();
         } else if (item.getItemId()==R.id.signout) {
-            startActivity(new Intent(getApplicationContext(), ActivitySignIn.class));
-//            Toast.makeText(this, "SIGN OUT is under develop.", Toast.LENGTH_SHORT).show();
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setCancelable(false);
+            builder.setMessage("Sure want to sign out?");
+            builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    //if user pressed "yes", then he is allowed to exit from application
+                    FirebaseAuth.getInstance().signOut();
+                    startActivity(new Intent(getBaseContext(), ActivitySignIn.class));
+                    finish();
+                }
+            });
+            builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    //if user select "No", just cancel this dialog and continue with app
+                    dialog.cancel();
+                }
+            });
+            AlertDialog alert = builder.create();
+            alert.show();
         }
         return super.onOptionsItemSelected(item);
     }

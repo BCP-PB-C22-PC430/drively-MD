@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ActivityLandingPage extends AppCompatActivity {
 
-    Button signin, signup;
+    Button signin;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -17,10 +17,8 @@ public class ActivityLandingPage extends AppCompatActivity {
         setContentView(R.layout.activity_landingpage);
 
         signin = findViewById(R.id.lpsignin);
-        signup = findViewById(R.id.lpsignup);
 
         signin.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), ActivitySignIn.class)));
 
-        signup.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), ActivitySignUp.class)));
     }
 }

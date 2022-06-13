@@ -63,7 +63,7 @@
         The second one is the speed limit, similar to the drowsiness detection feature, \n
         this feature will turn the alarm on if the driver driving almost reach the speed limit. \n
         The last one is driving preparation, this feature will help driver to check their driving equipment, \n
-        driving requirement and others."
+        driving requirement and others. \n\n\n\n\napp version DL.1"
                 android:textAlignment="center"
                 android:textColor="@color/not_black"
                 android:textSize="20dp"

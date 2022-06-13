@@ -48,9 +48,6 @@
             android:name=".ActivitySignIn"
             android:theme="@style/Theme.Drively.NoActionBar" />
         <activity
-            android:name=".ActivitySignUp"
-            android:theme="@style/Theme.Drively.NoActionBar" />
-        <activity
             android:name=".ActivityMainPage"
             android:theme="@style/Theme.Drively.NoActionBar" />
         <activity

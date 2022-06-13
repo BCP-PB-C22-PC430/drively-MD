@@ -14,7 +14,7 @@
     <ImageView
         android:id="@+id/iv_logo"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         android:src="@drawable/logo" />
 
     <TextView
@@ -28,75 +28,6 @@
         android:textSize="25dp"
         android:textStyle="bold" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/not_black"
-        android:textColorHint="@color/not_black">
-        <EditText
-            android:id="@+id/signin_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="casual"
-            android:hint="Email"
-            android:imeOptions="actionNext"
-            android:inputType="textEmailAddress"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:textColor="@color/not_black"
-            android:textColorHint="@color/not_black"
-            android:textStyle="bold"
-            android:textSize="18dp"
-            android:backgroundTint="@color/grey_ten"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/not_black"
-        android:textColorHint="@color/not_black"
-        app:passwordToggleEnabled="true">
-        <EditText
-            android:id="@+id/signin_pw"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="casual"
-            android:hint="Password"
-            android:imeOptions="actionNext"
-            android:inputType="textPassword"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:textColor="@color/not_black"
-            android:textColorHint="@color/not_black"
-            android:textStyle="bold"
-            android:layout_marginBottom="15dp"
-            android:textSize="18dp"
-            android:backgroundTint="@color/grey_ten"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <Button
-        android:id="@+id/btnsignin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button_shape"
-        android:fontFamily="casual"
-        android:text="Sign In"
-        android:textColor="@color/yellow"
-        android:textStyle="bold"
-        android:textSize="15dp"/>
-
-    <TextView
-        android:id="@+id/tv_signup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Belum punya akun? Sign Up disini!"
-        android:textColor="@color/not_black"
-        android:textStyle="bold"
-        android:fontFamily="casual"
-        android:layout_marginTop="25px"
-        android:gravity="center_horizontal"
-        android:textSize="15dp"/>
-
     <TextView
         android:id="@+id/tv_signinmethod"
         android:layout_width="match_parent"
@@ -107,7 +38,7 @@
         android:fontFamily="casual"
         android:layout_marginTop="50dp"
         android:gravity="center_horizontal"
-        android:textSize="20dp"/>
+        android:textSize="25dp"/>
 
     <Button
         android:id="@+id/btngooglesignin"
@@ -122,7 +53,7 @@
         android:paddingRight="70dp"
         android:text="AKUN GOOGLE"
         android:textColor="@color/white"
-        android:textSize="15dp"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
     <ProgressBar
